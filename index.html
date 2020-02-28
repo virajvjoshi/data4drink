@@ -244,7 +244,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 var map = {
 	"./App.tsx": "./code/App.tsx",
+	"./App1.tsx": "./code/App1.tsx",
 	"./Examples.tsx": "./code/Examples.tsx",
+	"./Printget.tsx": "./code/Printget.tsx",
 	"./Scanner.tsx": "./code/Scanner.tsx",
 	"./canvas.tsx": "./code/canvas.tsx"
 };
@@ -280,7 +282,7 @@ webpackContext.id = "./code sync recursive \\.(t|j)s(x?)|\\.css$";
 
 "use strict";
 
-//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vY29kZS9BcHAudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsaURBQWlEO0FBRWpELFNBQWdCLFFBQVEsQ0FBQyxLQUFLOztJQUMxQixPQUFPO1FBQ0gsT0FBTyxFQUFFLEVBQUUsQ0FBQyxFQUFFLENBQUMsRUFBRTtRQUNqQixPQUFPLEVBQUUsRUFBRSxDQUFDLEVBQUUsR0FBRyxFQUFFO1FBQ25CLFVBQVUsRUFBRSxFQUFFLFFBQVEsRUFBRSxDQUFDLEVBQUUsSUFBSSxFQUFFLENBQUMsRUFBRSxJQUFJLEVBQUUsV0FBVyxFQUFFO0tBQzFELENBQUE7Q0FDSjtBQU5ELDRCQU1DO0FBRUQsU0FBZ0IsVUFBVSxDQUFDLEtBQUs7O0lBQzVCLE9BQU87UUFDSCxPQUFPLEVBQUUsRUFBRSxNQUFNLEVBQUUsRUFBRSxFQUFFLE1BQU0sRUFBRSxDQUFDLEVBQUU7UUFDbEMsT0FBTyxFQUFFLEVBQUUsTUFBTSxFQUFFLEdBQUcsRUFBRSxNQUFNLEVBQUUsR0FBRyxFQUFFO1FBQ3JDLFVBQVUsRUFBRTtZQUNSLElBQUksRUFBRSxRQUFRO1lBQ2QsS0FBSyxFQUFFLENBQUM7WUFDUixRQUFRLEVBQUUsR0FBRztZQUNiLElBQUksRUFBRSxXQUFXO1lBQ2pCLE9BQU8sRUFBRSxFQUFFO1NBQ2Q7S0FDSixDQUFBO0NBQ0o7QUFaRCxnQ0FZQztBQUVELFNBQWdCLFVBQVUsQ0FBQyxLQUFLOztJQUM1QixPQUFPO1FBQ0gsT0FBTyxFQUFFLEVBQUUsTUFBTSxFQUFFLEVBQUUsRUFBRSxNQUFNLEVBQUUsQ0FBQyxFQUFFO1FBQ2xDLE9BQU8sRUFBRSxFQUFFLE1BQU0sRUFBRSxHQUFHLEVBQUUsTUFBTSxFQUFFLEdBQUcsRUFBRTtRQUNyQyxVQUFVLEVBQUU7WUFDUixJQUFJLEVBQUUsUUFBUTtZQUNkLEtBQUssRUFBRSxHQUFHO1lBQ1YsUUFBUSxFQUFFLEdBQUc7WUFDYixJQUFJLEVBQUUsV0FB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
+//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vY29kZS9BcHAudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsaURBQWlEO0FBRWpELFNBQWdCLFFBQVEsQ0FBQyxLQUFLOztJQUMxQixPQUFPO1FBQ0gsT0FBTyxFQUFFLEVBQUUsQ0FBQyxFQUFFLENBQUMsRUFBRTtRQUNqQixPQUFPLEVBQUUsRUFBRSxDQUFDLEVBQUUsR0FBRyxFQUFFO1FBQ25CLFVBQVUsRUFBRSxFQUFFLFFBQVEsRUFBRSxDQUFDLEVBQUUsSUFBSSxFQUFFLENBQUMsRUFBRSxJQUFJLEVBQUUsV0FBVyxFQUFFO0tBQzFELENBQUE7Q0FDSjtBQU5ELDRCQU1DO0FBRUQsU0FBZ0IsVUFBVSxDQUFDLEtBQUs7O0lBQzVCLE9BQU87UUFDSCxPQUFPLEVBQUUsRUFBRSxNQUFNLEVBQUUsRUFBRSxFQUFFLE1BQU0sRUFBRSxDQUFDLEVBQUU7UUFDbEMsT0FBTyxFQUFFLEVBQUUsTUFBTSxFQUFFLEdBQUcsRUFBRSxNQUFNLEVBQUUsR0FBRyxFQUFFO1FBQ3JDLFVBQVUsRUFBRTtZQUNSLElBQUksRUFBRSxRQUFRO1lBQ2QsS0FBSyxFQUFFLENBQUM7WUFDUixRQUFRLEVBQUUsR0FBRztZQUNiLElBQUksRUFBRSxXQUFXO1lBQ2pCLE9BQU8sRUFBRSxFQUFFO1NBQ2Q7S0FDSixDQUFBO0NBQ0o7QUFaRCxnQ0FZQztBQUVELFNBQWdCLFVBQVUsQ0FBQyxLQUFLOztJQUM1QixPQUFPO1FBQ0gsT0FBTyxFQUFFLEVBQUUsTUFBTSxFQUFFLEVBQUUsRUFBRSxNQUFNLEVBQUUsQ0FBQyxFQUFFO1FBQ2xDLE9BQU8sRUFBRSxFQUFFLE1BQU0sRUFBRSxHQUFHLEVBQUUsTUFBTSxFQUFFLEdBQUcsRUFBRTtRQUNyQyxVQUFVLEVBQUU7WUFDUixJQUFJLEVBQUUsUUFBUTtZQUNkLEtBQUssRUFBRSxHQUFHO1lBQ1YsUUFBUSxFQUFFLEdBQUc7WUFDYixJQUFJLEVBQUUsV0FB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
 
 Object.defineProperty(exports, "__esModule", { value: true });
 // Learn more: https://framer.com/docs/overrides/
@@ -377,6 +379,10 @@ exports.CameraDone2 = CameraDone2;
 function DrinkReady1(props) {
     window["__checkBudget__"]();
     return {
+        onTap() {
+            window["__checkBudget__"]();
+            fetch("http://trends2020.local:3000/print");
+        },
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { duration: 0.5, delay: 5, ease: "easeInOut" },
@@ -386,6 +392,10 @@ exports.DrinkReady1 = DrinkReady1;
 function DrinkReady2(props) {
     window["__checkBudget__"]();
     return {
+        onTap() {
+            window["__checkBudget__"]();
+            fetch("http://trends2020.local:3000/print");
+        },
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { duration: 0.5, delay: 3, ease: "easeInOut" },
@@ -393,6 +403,54 @@ function DrinkReady2(props) {
 }
 exports.DrinkReady2 = DrinkReady2;
 exports.__info__ = [{ "name": "Scanning", "type": "override" }, { "name": "Listening1", "type": "override" }, { "name": "Listening2", "type": "override" }, { "name": "Listening3", "type": "override" }, { "name": "Done", "type": "override" }, { "name": "Camera", "type": "override" }, { "name": "CameraDone", "type": "override" }, { "name": "CameraDone2", "type": "override" }, { "name": "DrinkReady1", "type": "override" }, { "name": "DrinkReady2", "type": "override" }];
+
+
+/***/ }),
+
+/***/ "./code/App1.tsx":
+/*!***********************!*\
+  !*** ./code/App1.tsx ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwMS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL2NvZGUvQXBwMS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSwrQkFBOEI7QUFDOUIsbUNBQXVFO0FBRXZFLFNBQWdCLFdBQVc7O0lBQ3ZCLE1BQU07SUFDTixNQUFNLENBQUMsS0FBSyxFQUFFLFFBQVEsQ0FBQyxHQUFHLEtBQUssQ0FBQyxRQUFRLENBQUMsRUFBRSxPQUFPLEVBQUUsRUFBRSxFQUFFLENBQUMsQ0FBQTtJQUN6RCxNQUFNO0lBQ04sTUFBTSxTQUFTLEdBQUcsQ0FBTSxRQUFRLEVBQUMsRUFBRTs7UUFDL0IsTUFBTSxRQUFRLEdBQUcsTUFBTSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUE7UUFDdEMsTUFBTSxJQUFJLEdBQUcsTUFBTSxRQUFRLENBQUMsSUFBSSxFQUFFLENBQUE7UUFDbEMsUUFBUSxDQUFDLEVBQUUsT0FBTyxFQUFFLElBQUksRUFBRSxDQUFDLENBQUE7TUFDOUIsQ0FBQTtJQUNELE1BQU07SUFDTixLQUFLLENBQUMsU0FBUyxDQUFDLEdBQUcsRUFBRTs7UUFDakIsU0FBUyxDQUFDLG9DQUFvQyxDQUFDLENBQUE7S0FDbEQsRUFBRSxFQUFFLENBQUMsQ0FBQTtJQUNOLE9BQU8sQ0FDSCxvQkFBQyxjQUFLLElBQUMsSUFBSSxFQUFDLE1BQU0sRUFBQyxTQUFTLEVBQUMsVUFBVSxJQUNsQyxNQUFNO0lBQ1AsS0FBSyxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLEVBQUUsQ0FBQyxDQUN4QixvQkFBQyxjQUFLLFFBQUUsTUFBTSxDQUFDLElBQUksQ0FBUyxDQUMvQixDQUFDLENBQ0UsQ0FDWCxDQUFBO0NBQ0o7QUFyQkQsa0NBcUJDIn0=
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __webpack_require__(/*! react */ "react");
+const framer_1 = __webpack_require__(/*! framer */ "framer");
+function MyComponent() {
+    window["__checkBudget__"]();
+    // [1]
+    const [state, setState] = React.useState({ results: [] });
+    // [2]
+    const fetchData = (endpoint) => __awaiter(this, void 0, void 0, function* () {
+        window["__checkBudget__"]();
+        const response = yield fetch(endpoint);
+        const json = yield response.json();
+        setState({ results: json });
+    });
+    // [3]
+    React.useEffect(() => {
+        window["__checkBudget__"]();
+        fetchData("http://trends2020.local:3000/print");
+    }, []);
+    return (React.createElement(framer_1.Stack, { size: "100%", direction: "vertical" }, // [4]
+    state.results.map(result => (React.createElement(framer_1.Frame, null, result.name)))));
+}
+exports.MyComponent = MyComponent;
+exports.__info__ = [{ "name": "MyComponent", "children": false, "type": "component" }];
 
 
 /***/ }),
@@ -460,6 +518,54 @@ function FlipOutput() {
 }
 exports.FlipOutput = FlipOutput;
 exports.__info__ = [{ "name": "Hover", "type": "override" }, { "name": "Draggable", "type": "override" }, { "name": "Rotate", "type": "override" }, { "name": "FlipInput", "type": "override" }, { "name": "FlipOutput", "type": "override" }];
+
+
+/***/ }),
+
+/***/ "./code/Printget.tsx":
+/*!***************************!*\
+  !*** ./code/Printget.tsx ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJpbnRnZXQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9jb2RlL1ByaW50Z2V0LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBLCtCQUE4QjtBQUM5QixtQ0FBdUU7QUFFdkUsU0FBZ0IsV0FBVzs7SUFDdkIsTUFBTTtJQUNOLE1BQU0sQ0FBQyxLQUFLLEVBQUUsUUFBUSxDQUFDLEdBQUcsS0FBSyxDQUFDLFFBQVEsQ0FBQyxFQUFFLE9BQU8sRUFBRSxFQUFFLEVBQUUsQ0FBQyxDQUFBO0lBQ3pELE1BQU07SUFDTixNQUFNLFNBQVMsR0FBRyxDQUFNLFFBQVEsRUFBQyxFQUFFOztRQUMvQixNQUFNLFFBQVEsR0FBRyxNQUFNLEtBQUssQ0FBQyxRQUFRLENBQUMsQ0FBQTtRQUN0QyxNQUFNLElBQUksR0FBRyxNQUFNLFFBQVEsQ0FBQyxJQUFJLEVBQUUsQ0FBQTtRQUNsQyxRQUFRLENBQUMsRUFBRSxPQUFPLEVBQUUsSUFBSSxFQUFFLENBQUMsQ0FBQTtNQUM5QixDQUFBO0lBQ0QsTUFBTTtJQUNOLEtBQUssQ0FBQyxTQUFTLENBQUMsR0FBRyxFQUFFOztRQUNqQixTQUFTLENBQUMsb0NBQW9DLENBQUMsQ0FBQTtLQUNsRCxFQUFFLEVBQUUsQ0FBQyxDQUFBO0lBQ04sT0FBTyxDQUNILG9CQUFDLGNBQUssSUFBQyxJQUFJLEVBQUMsTUFBTSxFQUFDLFNBQVMsRUFBQyxVQUFVLElBQ2xDLE1BQU07SUFDUCxLQUFLLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxNQUFNLENBQUMsRUFBRSxDQUFDLENBQ3hCLG9CQUFDLGNBQUssUUFBRSxNQUFNLENBQUMsSUFBSSxDQUFTLENBQy9CLENBQUMsQ0FDRSxDQUNYLENBQUE7Q0FDSjtBQXJCRCxrQ0FxQkMifQ==
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __webpack_require__(/*! react */ "react");
+const framer_1 = __webpack_require__(/*! framer */ "framer");
+function MyComponent() {
+    window["__checkBudget__"]();
+    // [1]
+    const [state, setState] = React.useState({ results: [] });
+    // [2]
+    const fetchData = (endpoint) => __awaiter(this, void 0, void 0, function* () {
+        window["__checkBudget__"]();
+        const response = yield fetch(endpoint);
+        const json = yield response.json();
+        setState({ results: json });
+    });
+    // [3]
+    React.useEffect(() => {
+        window["__checkBudget__"]();
+        fetchData("http://trends2020.local:3000/print");
+    }, []);
+    return (React.createElement(framer_1.Stack, { size: "100%", direction: "vertical" }, // [4]
+    state.results.map(result => (React.createElement(framer_1.Frame, null, result.name)))));
+}
+exports.MyComponent = MyComponent;
+exports.__info__ = [{ "name": "MyComponent", "children": false, "type": "component" }];
 
 
 /***/ }),
@@ -57205,15 +57311,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
                                     "value": "next"
                                   }
                                 }
-                              },
-                              {
-                                "identifier": "framer/useOpenURL",
-                                "info": {
-                                  "url": {
-                                    "type": "string",
-                                    "value": "http://trends2020.local:3000/print"
-                                  }
-                                }
                               }
                             ]
                           }
@@ -59062,15 +59159,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
                             "value": "next"
                           }
                         }
-                      },
-                      {
-                        "identifier": "framer/useOpenURL",
-                        "info": {
-                          "url": {
-                            "type": "string",
-                            "value": "http://trends2020.local:3000/print"
-                          }
-                        }
                       }
                     ]
                   }
@@ -60200,15 +60288,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
                           "type": {
                             "type": "segmentedenum",
                             "value": "next"
-                          }
-                        }
-                      },
-                      {
-                        "identifier": "framer/useOpenURL",
-                        "info": {
-                          "url": {
-                            "type": "string",
-                            "value": "http://trends2020.local:3000/print"
                           }
                         }
                       }
